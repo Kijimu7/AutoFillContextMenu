@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AutoFill Context Menu Options</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label, input, button { display: block; margin-top: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 5px 0; }
+    .remove-button { margin-left: 10px; color: red; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>AutoFill Context Menu Options</h1>
+  <label for="salaryInput">Add Salary Option:</label>
+  <input type="text" id="salaryInput" placeholder="Enter salary value">
+  <button id="addSalaryButton">Add Salary</button>
+
+  <label for="linkInput">Add Link Option:</label>
+  <input type="text" id="linkInput" placeholder="Enter link URL">
+  <button id="addLinkButton">Add Link</button>
+
+  <h2>Current Salary Options:</h2>
+  <ul id="salaryList"></ul>
+
+  <h2>Current Link Options:</h2>
+  <ul id="linkList"></ul>
+
+  <button id="saveButton">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>
